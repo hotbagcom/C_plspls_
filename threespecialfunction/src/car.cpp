@@ -21,6 +21,7 @@ car::~car()
     delete Seri_num;
     delete Car_name;
 }
+
 car::car(const car &CC )
 {
     //for copied object these two variable same
@@ -37,10 +38,7 @@ car::car(const car &CC )
 
     //give notification about these new car
     std::cout<<"Copying car " + *CC.Car_name + ". Name of new copy car is " + *Car_name <<std::endl;
-
 }
-
-
 
 void car::distance(int _km)
 {

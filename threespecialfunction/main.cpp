@@ -1,7 +1,6 @@
 #include <iostream>
 #include "car.h"
 #include <string.h>
-using namespace std;
 
     int car::total_Emission = 0;
 
@@ -35,6 +34,6 @@ int main(void)
     delete M2;
 
     //print total Emission stored in static variable
-    cout<< "Total emission in static " << car::total_Emission <<endl;
+    std::cout<< "Total emission in static " << car::total_Emission <<std::endl;
     return 0;
 }
