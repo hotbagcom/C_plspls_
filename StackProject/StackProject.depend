@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1699605218 source:c:\users\tnc\documents\codeblok\inform\stackproject\src\yigin.cpp
+	"yigin.h"
+
+1699605218 c:\users\tnc\documents\codeblok\inform\stackproject\include\yigin.h
+
+1699605218 source:c:\users\tnc\documents\codeblok\inform\stackproject\main.cpp
+	<iostream>
+	"yigin.h"
+

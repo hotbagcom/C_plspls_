@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1692867544 source:c:\users\tnc\documents\codeblok\inform\informreprogres(1)\structure\main.c
+	<stdio.h>
+	<stdlib.h>
+	"definitions.h"
+
+1692866515 c:\users\tnc\documents\codeblok\inform\informreprogres(1)\structure\definitions.h
+

@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1700230709 source:c:\users\tnc\documents\codeblok\inform\inheritance\main.cpp
+	<iostream>
+	"child.h"
+
+1700231009 c:\users\tnc\documents\codeblok\inform\inheritance\include\child.h
+	"father.h"
+
+1700230627 c:\users\tnc\documents\codeblok\inform\inheritance\include\father.h
+
+1700231246 source:c:\users\tnc\documents\codeblok\inform\inheritance\src\cchild.cpp
+	"child.h"
+	<iostream>
+
+1700231246 source:c:\users\tnc\documents\codeblok\inform\inheritance\src\cfather.cpp
+	"father.h"
+	<iostream>
+

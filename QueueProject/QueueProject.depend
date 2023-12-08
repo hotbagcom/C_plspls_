@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1700225906 source:c:\users\tnc\documents\codeblok\inform\queueproject\src\sira.cpp
+	"sira.h"
+
+1700225864 c:\users\tnc\documents\codeblok\inform\queueproject\include\sira.h
+	<iostream>
+
+1700225854 source:c:\users\tnc\documents\codeblok\inform\queueproject\main.cpp
+	<iostream>
+	"Circularqueque.h"
+
+1700230230 source:c:\users\tnc\documents\codeblok\inform\queueproject\src\circularqueque.cpp
+	"Circularqueque.h"
+
+1700225980 c:\users\tnc\documents\codeblok\inform\queueproject\include\circularqueque.h
+	"sira.h"
+

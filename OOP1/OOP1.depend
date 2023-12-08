@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1699601662 source:c:\users\tnc\documents\codeblok\inform\oop1\main.cpp
+	<iostream>
+	<string>
+	"insan.h"
+
+1699601657 c:\users\tnc\documents\codeblok\inform\oop1\include\insan.h
+	<string>
+

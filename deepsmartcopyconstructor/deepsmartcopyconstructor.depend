@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1702023839 source:c:\users\tnc\documents\codeblok\inform\deepsmartcopyconstructor\main.cpp
+	<iostream>
+	<string.h>
+

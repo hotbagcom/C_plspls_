@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1692864689 source:c:\users\tnc\documents\codeblok\inform\informreprogres(1)\main.c
+	<stdio.h>
+	<stdlib.h>
+	<complex.h>
+

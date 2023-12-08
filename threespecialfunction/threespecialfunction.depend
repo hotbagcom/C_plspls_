@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1702033807 source:c:\users\tnc\documents\codeblok\inform\threespecialfunction\main.cpp
+	<iostream>
+	"car.h"
+	<string.h>
+
+1702034123 c:\users\tnc\documents\codeblok\inform\threespecialfunction\include\car.h
+	<string.h>
+	<iostream>
+
+1702034106 source:c:\users\tnc\documents\codeblok\inform\threespecialfunction\src\car.cpp
+	"car.h"
+	<string.h>
+	<iostream>
+
