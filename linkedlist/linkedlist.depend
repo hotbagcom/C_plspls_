@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1702635813 source:c:\users\tnc\documents\codeblok\inform\linkedlist\src\linked.cpp
+	"linked.h"
+
+1702640188 c:\users\tnc\documents\codeblok\inform\linkedlist\include\linked.h
+	"node.h"
+
+1702646446 c:\users\tnc\documents\codeblok\inform\linkedlist\include\node.h
+
+1703172452 source:c:\users\tnc\documents\codeblok\inform\linkedlist\src\node.cpp
+	"Node.h"
+
+1704319802 source:c:\users\tnc\documents\codeblok\inform\linkedlist\main.cpp
+	<iostream>
+	"LinkedList.h"
+
+1704319788 c:\users\tnc\documents\codeblok\inform\linkedlist\include\linkedlist.h
+
+1704320242 source:c:\users\tnc\documents\codeblok\inform\linkedlist\src\linkedlist.cpp
+	<iostream>
+	"LinkedList.h"
+

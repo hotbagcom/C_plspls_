@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1704434388 source:c:\users\tnc\documents\codeblok\inform\singlelinkedlist\src\linkkedlist.cpp
+	<iostream>
+	"LinkkedList.h"
+
+1704434217 c:\users\tnc\documents\codeblok\inform\singlelinkedlist\include\linkkedlist.h
+
+1703836133 source:c:\users\tnc\documents\codeblok\inform\singlelinkedlist\main.cpp
+	<iostream>
+	"LinkkedList.h"
+
