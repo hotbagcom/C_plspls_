@@ -2,7 +2,8 @@
 
 #include <iostream>
 #include <typeinfo>
-
+#include <cstdlib>
+#include <time.h> 
 //#include "C:\Users\tnc\Documents\codeblok\inform\Templete_learn\VectorClass.h"
 //#include "VectorClass.h"
 
@@ -19,11 +20,16 @@ public:
 
     VectorClass();
     //virtual ~VectorClass();
+    VectorClass(const VectorClass &VC);
     int push(Y in_data);//push to last index ::: 0 no problem - 1 problem
     int pop();//remove last index
     int get_size();//return index 
     int get_capacity();//return capacity
     int print();//print vector
+    int fill_random(int size_to_fill, Y lowerlimit, Y upperlimit);
+    int sort_bubble();
+    int sort_merge();
+    int sort_quick();
 };
 
     ///cpp code
@@ -43,8 +49,15 @@ public:
     }
     */
 
-    //VectorClass& VectorClass();//copy constructor
-    
+    template<typename Y> 
+    VectorClass<Y>::VectorClass(const VectorClass &VC ):index(VC.index),capacity(VC.capacity),vect(VC.vect) //for copied object these two variable same
+    {
+        std::cout<<"Copying vector \n";
+        //Y* vect=VC.vect;
+        std::cout<<"Now copied :) "<<std::endl;
+        
+    }
+
     template<typename Y> 
     int VectorClass<Y>::push(Y in_data)//push to last index ::: 0 no problem - 1 problem;
     {
@@ -102,7 +115,7 @@ public:
     int VectorClass<Y>::print()//print vector
     {
         if(capacity<=index)
-            return 8; //ERROR_NOT_ENOUGH_MEMORY
+            return -8; //8 ERROR_NOT_ENOUGH_MEMORY
         std::cout<<"Size of this class "<<get_size()<<std::endl;
 
         std::cout<<"Printing vector ";
@@ -116,6 +129,20 @@ public:
         return 0;
     }
     
+    template<typename Y>
+    int VectorClass<Y>::fill_random(int size_to_fill, Y lowerlimit, Y upperlimit )
+    {
+        if(lowerlimit>=upperlimit)
+            return -1; // buna uygun kodu araştır
+        srand(time(0));
+        for(int jj=0; jj<size_to_fill ;jj++)
+        {            
+            push(rand()%(upperlimit - lowerlimit +1) + lowerlimit);
+        }
+        //randomu olştur 
+        //bunları farklı türler için de yaz
+        return 0;
+    }
 
 
 
@@ -124,7 +151,7 @@ int main()
 {
     //VectorClass<int> vector;
 
-   
+//int   
     VectorClass<int> Arif ;
     Arif.push(10);
     Arif.push(5);
@@ -149,7 +176,7 @@ int main()
     Arif.print();
     std::cout<<"Size Of Arif " <<Arif.get_size()<<std::endl;
     std::cout<<"Reserved Size Of Arif " <<Arif.get_capacity()<<std::endl;
-
+//double
     VectorClass<double> Alper;
     Alper.push(2.45);
     Alper.push(1.78);
@@ -165,7 +192,7 @@ int main()
     Alper.print();
     std::cout<<"Size Of Alper " <<Alper.get_size()<<std::endl;
     std::cout<<"Reserved Size Of Alper " <<Alper.get_capacity()<<std::endl;
-
+//char
     VectorClass<char> Burak;
     Burak.push('a');
     Burak.push('b');
@@ -176,7 +203,6 @@ int main()
     Burak.print();
     Burak.pop();
     Burak.print();
-    
     Burak.push('g');
     Burak.push('h');
     Burak.push('j');
@@ -195,7 +221,32 @@ int main()
     Burak.push('l');
     Burak.push('m');
     Burak.push('n');
+    Burak.print();
     std::cout<<"Size Of Burak " <<Burak.get_size()<<std::endl;
     std::cout<<"Reserved Size Of Burak " <<Burak.get_capacity()<<std::endl;
+//copy constructor
+    VectorClass<double> Tugay(Alper);
+    std::cout<<"Alper ";
+    Alper.print();
+    std::cout<<"Tugay ";
+    Tugay.print();
+
+    VectorClass<int> Ozgur(Arif);
+    Ozgur.print();
+    Ozgur.fill_random(4,3,8);
+
+
+    /*
+    Adding new value: 7
+    Adding new value: 6
+    Adding new value: 3
+    Adding new value: 5
+    */
+    /*
+    Adding new value: 6
+    Adding new value: 3
+    Adding new value: 7
+    Adding new value: 4
+   */
 
 }
